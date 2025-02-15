@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5; 
+  color: #333; 
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #333030;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  color: #f7f0f0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+section{
+font-size: medium;
+color: #333;
+
+}
+
+/* Product Listings */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.product {
+  background: #c7c9cb; 
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #222;
+}
+
+.product p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4e5761; 
+}
+
+/* Buttons */
+button {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Shopping Cart */
+#shopping-cart {
+  margin-top: 30px;
+  padding: 20px;
+  background: #aba8a8; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items {
+  padding: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+#total-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #28a745; 
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .products {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .container {
+      width: 95%;
+  }
+}
